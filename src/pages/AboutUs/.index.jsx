@@ -1,9 +1,15 @@
 import React from 'react'
+import Header from '../../components/Header';
+
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <React.Fragment>
+   <Header/>
+    <div>About-Us</div>
+  </React.Fragment>
   )
-}
+  
+  }
 
 export default AboutUs;

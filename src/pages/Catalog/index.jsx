@@ -1,9 +1,13 @@
 import React from 'react'
+import Header from '../../components/Header';
 
 const Catalog = () => {
-  return (
-    <div>Catalog</div>
+  return(
+  <React.Fragment>
+    <Header/>
+      <div>Catalog</div>
+  </React.Fragment>
   )
-}
+  }
 
 export default Catalog;

@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../../components/Header';
 
-const Discount = () => {
+const Favourite = () => {
   return (
     <React.Fragment>
-       <Header/>
-       <div>Discount</div>
+      <Header/>
+      <div>Favourite</div>
     </React.Fragment>
-
   )
   }
 
-export default Discount;
+export default Favourite;

@@ -8,8 +8,9 @@ import Cotegory from './pages/Cotegory';
 import Delivery from './pages/Delivery';
 import Discount from './pages/Discount';
 import Order from './pages/Order';
-import PageNotFound from './pages/PageNotFound';
 import Product from './pages/Product';
+import Favourite from "./pages/Favourite";
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/discount'element={<Discount/>}/>
       <Route path='/order'element={<Order/>}/>
       <Route path='/product'element={<Product/>}/>
+      <Route path="/favourite" element={<Favourite/>}/>
       <Route path='/*'element={<PageNotFound/>}/>
       </Routes>
     </BrowserRouter>

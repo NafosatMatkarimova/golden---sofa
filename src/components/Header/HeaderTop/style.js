@@ -1,24 +1,26 @@
 import styled from "styled-components";
-import { colors } from "../../../utils/variable";
+import { Colors, Flex } from "../../../utils";
+import { adaptiveValue } from "../../../utils/variable";
+
+
+
 
 const HeaderTopWrapper = styled.div`
 width: 100%;
 padding: 9px 16px;
-background-color:${colors.grey}
+background-color:${Colors.grey}
 
 `;
 
 const TextContent = styled.div`
-display:flax;
-align-items:center;
-justify-content:center;
-gap:80px;
+${Flex.center}
+${adaptiveValue("gap", 100, 60)}
 `
 const DiscountText = styled.p`
 font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-color:${colors.dark}
+${adaptiveValue("font-size", 16, 12)}
+${adaptiveValue("line-height", 26,12)}
+color:${Colors.light}
 `;
 
 const RecollText = styled.a`
@@ -27,7 +29,12 @@ font-size: 16px;
 line-height: 26px;
 letter-spacing: 0.12em;
 text-decoration-line: underline;
-color:${colors.light}
-`
+color:${Colors.light};
+
+
+@media (max-width: 768px){
+    display: none;
+}
+`;
 
 export{HeaderTopWrapper, DiscountText, RecollText, TextContent}

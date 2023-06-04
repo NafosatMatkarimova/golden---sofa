@@ -1,9 +1,13 @@
 import React from 'react'
+import Header from '../../components/Header';
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <React.Fragment>
+       <Header/>
+       <div>Product</div>
+   </React.Fragment>
   )
-}
+  }
 
 export default Product;

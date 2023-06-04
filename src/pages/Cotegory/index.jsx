@@ -1,9 +1,13 @@
 import React from 'react'
+import Header from '../../components/Header';
 
 const Cotegory = () => {
   return (
-    <div>Cotegory</div>
+    <React.Fragment>
+      <Header/>
+      <div>Cotegory</div>
+    </React.Fragment>
   )
-}
+  }
 
 export default Cotegory;
