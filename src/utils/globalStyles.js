@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
+import Flex from './flex';
+import Colors from './variable';
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -14,8 +16,25 @@ text-decoration: none;
 body{
     font-family: Roboto;
 }
-main {
-    height: 80vh;
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: ${Colors.light}; */
+  ${Flex.center}
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 `;
