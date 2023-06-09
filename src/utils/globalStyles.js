@@ -37,4 +37,25 @@ body{
   object-fit: cover;
 }
 
+button{
+    border: none;
+}
+
+.swiper-Pagination-bulles{
+    width: auto;
+}
+
+.swiper-pagination-ballet{
+    background-color: #ADD7FF;
+}
+
+.swiper-pagination-ballet-active{
+  background-color: ${Colors.primarycolor};
+}
+
+.swiper-pagination-ballet:nth-child(even){
+
+    
+}
+
 `;

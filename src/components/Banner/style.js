@@ -80,5 +80,11 @@ ${adaptiveValue("line-height",28, 18)}
 color: ${Colors.borderColor};
 text-decoration: line-through;
 ` 
+const SwiperNavigation = styled.div`
+width: 180px;
+margin: 20px auto;
+${Flex.alignCenter}
+ gap: 20px;
+`
 
-export {BannerWrapper, SwiperItems, SwiperItemsImage, SwiperInfo, InfoTitle, InfoText, PriceBox, PriceBadge,MainPriceText,DiscountText}
+export {BannerWrapper, SwiperItems, SwiperItemsImage, SwiperInfo, InfoTitle, InfoText, PriceBox, PriceBadge,MainPriceText,DiscountText, SwiperNavigation}
