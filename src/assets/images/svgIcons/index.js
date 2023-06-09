@@ -8,3 +8,5 @@ export {default as VkIcon} from "./vk";
 export {default as TwitterIcon} from "./twitter";
 export { default as FacebookIcon} from "./faceBook";
 export {default as ArrowIcon} from "./arrow";
+export {default as BoxIcon} from "./box";
+export {default as EvaluateIcon} from "./evaluate";

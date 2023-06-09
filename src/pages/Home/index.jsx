@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
 import Statistics from '../../components/Statistics';
+import WhyUs from '../../components/WhyUs';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
     <main>
       <Banner/>
       <Statistics/>
+      <WhyUs/>
     </main>
     <Footer/>
     </>
