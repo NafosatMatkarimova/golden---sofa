@@ -6,7 +6,8 @@ const dark = '#161C24';
 const grey = '#454F5B'
 const deepDark ='#0D2436';
 const light = '#ffff';
-const borderColor = "#c4cdd5"
+const borderColor = "#c4cdd5";
+const lightGrey = "#fafafa";
 
 const Colors = {
     primarycolor,
@@ -16,6 +17,7 @@ const Colors = {
     deepDark,
     light,
     borderColor,
+    lightGrey,
 }
 
 export const adaptiveValue = (property, startSize, minSize) => {

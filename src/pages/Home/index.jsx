@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
 import Statistics from '../../components/Statistics';
 import WhyUs from '../../components/WhyUs';
+import CategoryList from '../../components/CategoryList';
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
       <Banner/>
       <Statistics/>
       <WhyUs/>
+      <CategoryList/>
     </main>
     <Footer/>
     </>
