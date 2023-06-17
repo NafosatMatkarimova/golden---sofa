@@ -5,6 +5,7 @@ import Banner from '../../components/Banner';
 import Statistics from '../../components/Statistics';
 import WhyUs from '../../components/WhyUs';
 import CategoryList from '../../components/CategoryList';
+import PopularProducts from '../../components/PopularProducts';
 
 
 
@@ -15,10 +16,11 @@ const Home = () => {
     <>
     <Header/>
     <main>
-      <Banner/>
+     <Banner/>
       <Statistics/>
       <WhyUs/>
       <CategoryList/>
+      {/* <PopularProducts/> */}
     </main>
     <Footer/>
     </>
