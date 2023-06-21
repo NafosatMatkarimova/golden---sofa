@@ -1,4 +1,6 @@
-import img from "../../assets/images/swiperFoto/img1.png";
+import img from "../../assets/images/swiperFoto/bannerImg.png";
+
+
 
 const swiperElmentData = [
     {

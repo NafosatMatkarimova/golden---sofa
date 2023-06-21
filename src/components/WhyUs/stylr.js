@@ -20,6 +20,11 @@ const Content = styled.div`
 ${adaptiveValue('margin-top', 52, 24)}
 ${Flex.spaceBetween}
 gap: 30px;
+
+@media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 const ContentBox =styled.div`
@@ -30,6 +35,7 @@ ${adaptiveValue("gap", 32, 16)}
 border-right: 1px solid ${Colors.primarycolor};
 border-left: 1px solid ${Colors.primarycolor};
 flex-direction: column;
+
 @media (max-width: 768px){
     border-right: none;
     border-left: none;

@@ -72,7 +72,7 @@ const Banner = () => {
             </S.SwiperNavBtn>
             <div className="pagination-bullets"></div>
             <S.SwiperNavBtn className="next-el" ref={nextElRef}>
-              <ArrowIcon style={{ transform: "Rotate(180deg)" }} />
+              <ArrowIcon style={{ transform: "rotate(180deg)" }} />
             </S.SwiperNavBtn>
           </S.SwiperNavigation>
         </Swiper>

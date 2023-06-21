@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import Colors from './variable';
+import Colors, { adaptiveValue } from './variable';
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -80,6 +80,13 @@ button{
 
     .swiper-button-disabled svg path {
         stroke: #A4A4A4 !important ;
+    }
+
+    .error_message {
+        position: absolute;
+        bottom: -20px;
+      color: red;
+      ${adaptiveValue("font-size", 14, 12)}
     }
 
 `;

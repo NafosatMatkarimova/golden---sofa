@@ -6,6 +6,7 @@ import Statistics from '../../components/Statistics';
 import WhyUs from '../../components/WhyUs';
 import CategoryList from '../../components/CategoryList';
 import PopularProducts from '../../components/PopularProducts';
+import ContactForm from '../../components/ContactForm';
 
 
 
@@ -20,7 +21,8 @@ const Home = () => {
       <Statistics/>
       <WhyUs/>
       <CategoryList/>
-      {/* <PopularProducts/> */}
+       <PopularProducts/>
+       <ContactForm/> 
     </main>
     <Footer/>
     </>
