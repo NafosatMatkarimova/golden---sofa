@@ -1,4 +1,4 @@
-import { FacebookIcon, TwitterIcon, VkIcon } from '../../assets/images/svgIcons';
+import { FacebookIcon, TwitterIcon, VkIcon } from 'assets/images/svgIcons';
  
 const socialMediaData = [
 

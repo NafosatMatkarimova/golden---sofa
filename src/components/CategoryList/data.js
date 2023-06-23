@@ -1,4 +1,4 @@
-import image from "../../assets/images/categoryfoto.png"
+import image from "assets/images/categoryfoto.png"
 const CatecgoryListData = [
     {
       id: 0,

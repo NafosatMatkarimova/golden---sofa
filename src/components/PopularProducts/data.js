@@ -1,5 +1,5 @@
-import img from "../../assets/images/swiperFoto/img.3.png";
-import img4 from "../../assets/images/swiperFoto/img.4.png";
+import img from "assets/images/swiperFoto/img.3.png";
+import img4 from "assets/images/swiperFoto/img.4.png";
 
 
 const PopularProductData =[

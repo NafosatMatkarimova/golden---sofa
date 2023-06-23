@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Container } from "../Container/style";
+import { Container } from "components/Container/style";
 import * as S from "./style";
 
 import "swiper/css";

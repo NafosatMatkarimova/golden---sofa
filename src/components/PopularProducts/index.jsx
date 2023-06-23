@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Swiper} from "swiper/react";
-import { Container } from '../Container/style';
-import { Title } from '../WhyUs/stylr';
+import { Container } from 'components/Container/style';
+import { Title } from 'components/WhyUs/style';
 import* as S from "./style"
 
 import "swiper/css";
@@ -9,8 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation} from 'swiper';
 
-import { ArrowIcon } from '../../assets/images/svgIcons';
-import { SwiperNavBtn } from '../Banner/style';
+import { ArrowIcon } from 'assets/images/svgIcons';
+import { SwiperNavBtn } from 'components/Banner/style';
 import { PopularProductData } from './data';
 
 const PopularProducts = () => {

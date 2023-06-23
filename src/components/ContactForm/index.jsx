@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from "./style";
 import { Container } from '../Container/style';
-import { Title } from '../WhyUs/stylr';
+import { Title } from '../WhyUs/style';
 import {Formik} from "formik";
 import * as yup from "yup";
 import ErrorMessageHandler from '../ErrorMessageHandler';

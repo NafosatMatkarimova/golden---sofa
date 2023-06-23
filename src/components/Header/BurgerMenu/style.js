@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Flex } from "../../../utils";
+import { Flex } from "utils";
 import { NavLink } from "../style";
-import Colors, { adaptiveValue } from "../../../utils/variable";
+import Colors, { adaptiveValue } from "utils/variable";
 
 
 const BurgerMenuWrapper =styled.div`

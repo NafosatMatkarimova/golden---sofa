@@ -1,16 +1,16 @@
 
 import{BrowserRouter, Routes, Route} from "react-router-dom"
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs/.index';
-import Cart from './pages/Cart';
-import Catalog from './pages/Catalog';
-import Cotegory from './pages/Cotegory';
-import Delivery from './pages/Delivery';
-import Discount from './pages/Discount';
-import Order from './pages/Order';
-import Product from './pages/Product';
-import Favourite from "./pages/Favourite";
-import PageNotFound from './pages/PageNotFound';
+import Home from 'pages/Home';
+import AboutUs from 'pages/AboutUs/.index';
+import Cart from 'pages/Cart';
+import Catalog from 'pages/Catalog';
+import Cotegory from 'pages/Cotegory';
+import Delivery from 'pages/Delivery';
+import Discount from 'pages/Discount';
+import Order from 'pages/Order';
+import Product from 'pages/Product';
+import Favourite from "pages/Favourite";
+import PageNotFound from 'pages/PageNotFound';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Colors, { adaptiveValue } from "../../utils/variable";
-import { Flex } from "../../utils";
-import { SwiperNavigation } from "../Banner/style";
+import Colors, { adaptiveValue } from "utils/variable";
+import { Flex } from "utils";
+import { SwiperNavigation } from "components/Banner/style";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 

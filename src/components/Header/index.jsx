@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HeaderTop from './HeaderTop/index.jsx';
 import BurgerMenu from './BurgerMenu/index.jsx';
-import { Container } from '../Container/style.js';
+import { Container } from 'components/Container/style.js';
 import* as style from "./style.js"
-import {LogoIcon, PhoneIcon, CartIcon, LikeIcon} from "../../assets/images/svgIcons";
+import {LogoIcon, PhoneIcon, CartIcon, LikeIcon} from "assets/images/svgIcons";
 
 import "./style.js"
 

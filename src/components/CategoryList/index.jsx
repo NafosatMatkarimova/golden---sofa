@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "../Container/style";
-import { Title } from "../WhyUs/stylr";
+import { Container } from "components/Container/style";
+import { Title } from "components/WhyUs/style";
 import { CatecgoryListData } from "./data";
 import * as S from "./style";
 

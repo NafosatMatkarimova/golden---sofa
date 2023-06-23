@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as S from "./style" 
-import { Container } from '../Container/style';
+import { Container } from 'components/Container/style';
 
-import { LogoIcon } from '../../assets/images/svgIcons';
+import { LogoIcon } from 'assets/images/svgIcons';
 import { socialMediaData } from './data';
 
 

@@ -1,4 +1,4 @@
-import img from "../../assets/images/swiperFoto/bannerImg.png";
+import img from "assets/images/swiperFoto/bannerImg.png";
 
 
 
