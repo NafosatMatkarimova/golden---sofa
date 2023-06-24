@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Breadcrumbs } from "@mui/material";
+import { Breadcrumbs, Typography } from "@mui/material";
 import Colors, { adaptiveValue } from "utils/variable";
 
 const CatalogWrapper = styled.section`
@@ -19,12 +19,26 @@ const CatalogContent = styled.div`
 
 const CatalogList = styled.ul`
   display: grid;
-  grid-template-columns: 4 1fr;
-  grid-template-rows: 2, 1fr;
+  grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   ${adaptiveValue("column-gap", 30, 20)}
   ${adaptiveValue("row-gap", 50, 24)}
   ${adaptiveValue("margin-top", 64, 24)}
   ${adaptiveValue("margin-bottom", 50, 32)}
+
+
+  @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 `;
 
-export { CatalogWrapper, CatalogBreadCrumbs, CatalogContent, CatalogList };
+const CurrentPageLink = styled(Typography)`
+    color: #9d9d9d;
+`;
+
+export { CatalogWrapper, CatalogBreadCrumbs, CatalogContent, CatalogList, CurrentPageLink };

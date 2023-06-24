@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "components/Header";
-import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import CatalogListItems from "components/CatalogListItems";
+import { catalogListData } from "./data";
 import { Container } from "components/Container/style";
 import { Title } from "components/WhyUs/style";
-import CatalogListItems from "components/CatalogListItems";
+import { ListLinkBtn } from "components/CategoryList/style";
+import Footer from "components/Footer";
+
 import * as S from "./style";
-import { catalogListData } from "./data";
 
 const Catalog = () => {
   return (
@@ -19,17 +20,24 @@ const Catalog = () => {
             Главная
           </Link>
 
-          <Typography color="text.primary">Catalog</Typography>
+          <S.CurrentPageLink>Каталог</S.CurrentPageLink>
         </S.CatalogBreadCrumbs>
         <S.CatalogContent>
           <Title>Категории</Title>
           <S.CatalogList>
           {catalogListData.map((el) => (
-          <CatalogListItems key={el.id} {el.text}/>
-          ))}
+                            <CatalogListItems
+                                key={el.id}
+                                image={el.image}
+                                text={el.text}
+                                type={el.type}
+                            />
+                        ))}
           </S.CatalogList>
+          <ListLinkBtn to='/catalog'>Смотреть все</ListLinkBtn>
         </S.CatalogContent>
       </Container>
+      <Footer/>
     </S.CatalogWrapper>
   );
 };
