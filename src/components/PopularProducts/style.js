@@ -4,6 +4,7 @@ import { Flex } from "utils";
 import { SwiperNavigation } from "components/Banner/style";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import { colors } from "@mui/material";
 
 const PopularWrapper = styled.section`
   width: 100%;
@@ -31,8 +32,9 @@ const ProductCard = styled(SwiperSlide)`
 
 const ProductImageLink = styled(Link)`
   width: 100%;
-  max-height: 320px;
-`;
+  height: 320px;
+  background-color: ${Colors.lightGrey};
+  `;
 
 const ProductCardInfo = styled.div`
   padding: 10px 12px;

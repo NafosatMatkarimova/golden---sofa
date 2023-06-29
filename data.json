@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0",
+        "inCash": true,
+        "name": "Дверной Замок Golden Soft для отеля",
+        "price": "33 000₽",
+        "oldPrice": "37 000₽",
+        "category": "Накладные электронные замки",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9bvzqpL3bIKwuW52N5v5SUFa3gE8MKsZFiJT1ZtHV1SYpFYtv"
+    },
+    {
+        "id": "1",
+        "inCash": false,
+        "name": "Вариативный замок Golden Soft для отеля",
+        "price": "7 000₽",
+        "oldPrice": "8 000₽",
+        "category": "Врезные электронные замки",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRV-TjDSLJOtVq3j1uLd4-1NNx3k_5Jsqo8hXySsvxSB7vsF33y"
+    },
+    {
+        "id": "2",
+        "inCash": true,
+        "name": "Дверной Замок Golden Soft для офиса",
+        "price": "33 000₽",
+        "oldPrice": "39 000₽",
+        "category": "Замки для квартиры",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmSy-rpPjwWTxc5qo3xBoxWmZQXpRG8pJBcurWZdAlaEsA2DTA"
+    },
+    {
+        "id": "3",
+        "inCash": true,
+        "name": "Дверной Замок Golden Soft для отеля",
+        "price": "9 000₽",
+        "oldPrice": "12 000₽",
+        "category": "Замки для дома",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGfw-Uq8eiUkfJFETHL60VAjpEeWScvLCzCBP6KxtlJdVGcPvZ"
+    }
+]

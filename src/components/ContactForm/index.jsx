@@ -33,7 +33,7 @@ const ContactForm = () => {
                 </S.FormContentText>
                 <Formik initialValues={contactInitialValeus} onSubmit={onSubmit} validationSchema={ContactFormValidation} validatiOnChange>
                     {(Formik) => {
-                        console.log(Formik);
+                       
                         return(
                             <S.ContactForm onSubmit={Formik.handleSubmit}>
                           <S.FormRows>

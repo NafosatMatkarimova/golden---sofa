@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Swiper} from "swiper/react";
+import axios from 'axios';
 import { Container } from 'components/Container/style';
 import { Title } from 'components/WhyUs/style';
 import* as S from "./style"
@@ -11,9 +12,17 @@ import { Navigation} from 'swiper';
 
 import { ArrowIcon } from 'assets/images/svgIcons';
 import { SwiperNavBtn } from 'components/Banner/style';
-import { PopularProductData } from './data';
+
 
 const PopularProducts = () => {
+
+    const [data, setData] = useState ([])
+    async function getData () {
+        const res = await axios.get (`${process.env.REACT_APP_MAIN_URL}`)
+        if (res.status === 200) {
+            setData(res.data)
+        }
+    }
 
     const useSwiperRef = () => {
         const [wrapper, setWrapper] = useState(null);
@@ -32,7 +41,11 @@ const PopularProducts = () => {
     const [nextEl, nextElRef] = useSwiperRef();
     const [prevEl, prevElRef] = useSwiperRef();
 
+    useEffect(() => {
+        getData()
+    }, []);
 
+    console.log(data);
   return (
     <S.PopularWrapper>
         <Container>
@@ -65,7 +78,7 @@ const PopularProducts = () => {
         modules={[Navigation]}
         className="mySwiper"
       >
-      {PopularProductData.map((el) => (
+      {data?.map((el) => (
         <S.ProductCard key={el.id}>
            <S.ProductImageLink to="/">
             <S.InCashTextBox>
@@ -77,7 +90,7 @@ const PopularProducts = () => {
             <img src={el.image} alt={el.title} />
            </S.ProductImageLink>
            <S.ProductCardInfo>
-            <S.InfoTitle>{el.title}</S.InfoTitle>
+            <S.InfoTitle>{el.name}</S.InfoTitle>
             <S.PriceBoard>
                 <S.Price>{el.price}</S.Price>
                 <S.OldPrice>{el.oldPrice}</S.OldPrice>

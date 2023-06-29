@@ -33,7 +33,7 @@ const ContactForm = styled.form`
   @media (max-width: 768px) {
         flex-direction: column;
         row-gap: 24px;
-    }
+    };
 `;
 
 const FormInput = styled.input`

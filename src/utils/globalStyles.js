@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import Colors, { adaptiveValue } from './variable';
+import { Colors } from "./index";
+import { adaptiveValue } from './variable';
 
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap'); */
 *{
     padding: 0;
 margin: 0;
@@ -31,6 +32,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .swiper-slide img {
