@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Swiper} from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react";
 import axios from 'axios';
 import { Container } from 'components/Container/style';
 import { Title } from 'components/WhyUs/style';
+import ProductCard from 'components/ProductCard';
+import { SwiperNavBtn } from 'components/Banner/style';
 import* as S from "./style"
 
 import "swiper/css";
@@ -11,7 +13,6 @@ import "swiper/css/pagination";
 import { Navigation} from 'swiper';
 
 import { ArrowIcon } from 'assets/images/svgIcons';
-import { SwiperNavBtn } from 'components/Banner/style';
 
 
 const PopularProducts = () => {
@@ -79,24 +80,17 @@ const PopularProducts = () => {
         className="mySwiper"
       >
       {data?.map((el) => (
-        <S.ProductCard key={el.id}>
-           <S.ProductImageLink to="/">
-            <S.InCashTextBox>
-                <S.CashText>
-                    {el.inCash ? "В наличии" : "Нет в наличии"}
-                </S.CashText>
-            </S.InCashTextBox>
-            <S.SaleBox>SALE</S.SaleBox>
-            <img src={el.image} alt={el.title} />
-           </S.ProductImageLink>
-           <S.ProductCardInfo>
-            <S.InfoTitle>{el.name}</S.InfoTitle>
-            <S.PriceBoard>
-                <S.Price>{el.price}</S.Price>
-                <S.OldPrice>{el.oldPrice}</S.OldPrice>
-            </S.PriceBoard>
-           </S.ProductCardInfo>
-        </S.ProductCard>
+      <SwiperSlide key={el.id}>
+        <ProductCard 
+      
+      inCash={el.inCash}
+      image={el.image}
+      title={el.title}
+      name={el.name}
+      price={el.price}
+      oldPrice={el.oldPrice}
+      />
+      </SwiperSlide>
       ))}
       </Swiper>
         </Container>
