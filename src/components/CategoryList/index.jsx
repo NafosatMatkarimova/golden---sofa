@@ -18,7 +18,7 @@ const CategoryList = () => {
             </S.CategoryItem>
           ))}
         </S.CategoryPage>
-        <S.ListLinkBtn>Перейти</S.ListLinkBtn>
+        <S.ListLinkBtn to="/catalog">Все категории</S.ListLinkBtn>
       </Container>
     </S.CategoryListWrapper>
   );

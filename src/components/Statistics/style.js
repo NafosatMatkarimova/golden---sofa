@@ -11,8 +11,7 @@ background-color: ${Colors.secondarycolor};
 const StatisticsContainer =styled.div`
 max-width:1300px;
 width:100%;
-padding:0 20px;
-padding-block: 0;
+margin: 0 auto;
 ${adaptiveValue("padding-inline", 20, 32)}
 `
 const StatisticsContent = styled.div`
