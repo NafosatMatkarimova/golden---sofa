@@ -1,30 +1,21 @@
-import { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import { Container } from "components/Container/style";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { useSwiperRef } from "hooks/useSwiperRef";
+import { Swiper } from "swiper/react";
+import { swiperElmentData } from "./data";
+import Button from "../Button";
 import * as S from "./style";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import { Swiper } from "swiper/react";
-import Button from "../Button";
 import { ArrowIcon } from "../../assets/images/svgIcons";
-import { swiperElmentData } from "./data";
 
 const Banner = () => {
-  const useSwiperRef = () => {
-    const [wrapper, setWrapper] = useState(null);
-    const ref = useRef(null);
-    useEffect(() => {
-      if (ref.current) {
-        setWrapper(ref.current);
-      }
-    }, []);
 
-    return [wrapper, ref];
-  };
 
   const [nextEl, nextElRef] = useSwiperRef();
   const [prevEl, prevElRef] = useSwiperRef();

@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide} from "swiper/react";
 import axios from 'axios';
+import { useSwiperRef } from 'hooks/useSwiperRef';
 import { Container } from 'components/Container/style';
 import { Title } from 'components/WhyUs/style';
 import ProductCard from 'components/ProductCard';
@@ -25,18 +26,7 @@ const PopularProducts = () => {
         }
     }
 
-    const useSwiperRef = () => {
-        const [wrapper, setWrapper] = useState(null);
-        const ref = useRef(null);
-
-        useEffect(() => {
-            if (ref.current) {
-                setWrapper(ref.current);
-            }
-        }, []);
-
-        return [wrapper, ref];
-    };
+ 
 
     
     const [nextEl, nextElRef] = useSwiperRef();
