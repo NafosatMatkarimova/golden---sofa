@@ -1,9 +1,10 @@
 import React from "react";
 import * as S from "./style";
 
-const ProductCard = ({ id, inCash, image, title, name, price, oldPrice }) => {
+const ProductCard = ({ data }) => {
+  const { id, inCash, image, title, name, price, oldPrice } = data;
   return (
-    <S.ProductCardWrapper key={id}>
+    <S.ProductCardWrapper>
       <S.ProductImageLink to="/">
         <S.InCashTextBox>
           <S.CashText>{inCash ? "В наличии" : "Нет в наличии"}</S.CashText>

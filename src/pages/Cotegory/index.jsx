@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Header from "components/Header";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -9,11 +9,15 @@ import BreadCrumbs from "components/BreadCrumbs";
 import Footer from "components/Footer";
 import ContactForm from "components/ContactForm";
 import PopularProducts from "components/PopularProducts";
+import InfoColumns from "components/InfoColums";
+import { infoData, infoSecondData } from "components/InfoColums/data";
+import MainContext from "context/CartContext";
 
 const Cotegory = () => {
   const { type } = useParams();
   const [data, setData] = useState([]);
   const categoryText = type.toLocaleLowerCase();
+  const {cartItems, likeItems} = useContext(MainContext)
 
   console.log(categoryText);
 
@@ -32,25 +36,25 @@ const Cotegory = () => {
 
   return (
     <>
-      <Header />
-      <Container>
-      <BreadCrumbs disableText={"Каталог"} />
-        <CategoryListWrapper>
-          {data?.map((el) => (
-            <ProductCard
-              key={el.id}
-              price={el.price}
-              image={el.image}
-              inCash={el.inCash}
-              name={el.name}
-              oldPrice={el.oldPrice}
-            />
-          ))}
-        </CategoryListWrapper>
-      </Container>
-      <PopularProducts/>
-      <ContactForm/>
-        <Footer/>
+           <Header />
+            <Container>
+                <BreadCrumbs disableText={"Каталог"} />
+                <CategoryListWrapper>
+                    {data?.map((el) => (
+                        <ProductCard
+                            key={el.id}
+                            data={el}
+                            select={cartItems.find((item) => item.id === el.id)}
+                            like={likeItems.some((item) => item.id === el.id)}
+                        />
+                    ))}
+                </CategoryListWrapper>
+            </Container>
+            <PopularProducts />
+            <InfoColumns data={infoData} />
+            <InfoColumns data={infoSecondData} reverse={true} />
+            <ContactForm />
+            <Footer />
     </>
   );
 };

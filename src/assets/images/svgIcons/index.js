@@ -10,3 +10,4 @@ export { default as FacebookIcon} from "./faceBook";
 export {default as ArrowIcon} from "./arrow";
 export {default as BoxIcon} from "./box";
 export {default as EvaluateIcon} from "./evaluate";
+export { default as TrueIcon } from "./trueIcon";
