@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Header from "components/Header";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import ProductCard from "components/ProductCard";
 import { Container } from "components/Container/style";
 import styled from "styled-components";

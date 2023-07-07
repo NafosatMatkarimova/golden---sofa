@@ -24,7 +24,7 @@ function App() {
       <Route path='/delivery'element={<Delivery/>}/>
       <Route path='/discount'element={<Discount/>}/>
       <Route path='/order'element={<Order/>}/>
-      <Route path='/product'element={<Product/>}/>
+      <Route path='/product/detail/:id'element={<Product/>}/>
       <Route path="/favourite" element={<Favourite/>}/>
       <Route path='/*'element={<PageNotFound/>}/>
       </Routes>

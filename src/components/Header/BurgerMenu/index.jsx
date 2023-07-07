@@ -3,7 +3,7 @@ import * as S from "./style";
 import { PhoneIcon } from 'assets/images/svgIcons';
 
 const BurgerMenu = ({open ,handleClick}) => {
-    console.log(open);
+    
   return (
     <S.BurgerMenuWrapper open={open}>
      <S.BurgerMenuNav>
