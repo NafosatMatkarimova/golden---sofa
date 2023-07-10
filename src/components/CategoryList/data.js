@@ -5,6 +5,7 @@ const CatecgoryListData = [
       image: image,
       title: "Для отелей",
       href: "/",
+      type: "forWork"
     },
 
     {
@@ -12,6 +13,7 @@ const CatecgoryListData = [
       image: image,
       title: "Для шкафчиков",
       href: "/",
+      type: "forOffice"
     },
 
     {
@@ -19,6 +21,7 @@ const CatecgoryListData = [
       image: image,
       title: "Для офисов",
       href: "/",
+      type: "forWork"
     },
 
     {
@@ -26,6 +29,7 @@ const CatecgoryListData = [
       image: image,
       title: "Замки для дома",
       href: "/",
+      type: "forWork"
     },
 ]
 

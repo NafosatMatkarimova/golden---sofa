@@ -91,6 +91,17 @@ const CashText = styled.span`
   color: ${Colors.gray};
 `;
 
+const RateText = styled.div`
+    ${Flex.alignCenter}
+    justify-content: space-between;
+    width: 250px;
+`;
+
+const RateTextInfo = styled.p`
+    font-size: 14px;
+    color: ${Colors.gray};
+`;
+
 export {
   ProductCardWrapper,
   ProductImageLink,
@@ -103,4 +114,6 @@ export {
   ProductImage,
   CashText,
   InCashTextBox,
+  RateText,
+  RateTextInfo
 };

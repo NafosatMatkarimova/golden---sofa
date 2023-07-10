@@ -5,12 +5,18 @@ import * as S from "./style";
 import Button from "components/Button";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Rate from "components/Rate";
+import { RateText, RateTextInfo } from "components/ProductCard/style";
 
 
 
 const ProductInfo = ({name, inCash, price, oldPrice, id }) => {
 return(
   <S.ProductInfoWrapper>
+    <RateText>
+    <Rate/>
+      <RateTextInfo>(12) отзывов</RateTextInfo>
+    </RateText>
     <ContentTitle>{name}</ContentTitle>
     <PriceBox>
       <MainPriceText>{price}</MainPriceText>
