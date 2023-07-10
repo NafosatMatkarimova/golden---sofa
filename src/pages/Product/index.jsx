@@ -11,6 +11,8 @@ import BreadCrumbs from 'components/BreadCrumbs';
 import ProductImageSwiper from 'components/ProductImageSwiper';
 import Flex from 'utils/flex';
 import styled from 'styled-components';
+import ProductInfo from 'components/ProductInfo';
+
 
 const Product = () => {
 
@@ -25,16 +27,19 @@ const Product = () => {
 
   useEffect(() => {
     getData()
-  }, [])
+  }, [id])
 
-  console.log(product,"product");
+  
 
   return (
     <>
        <Header/>
        <Container>
         <BreadCrumbs disableText={product?.name} additionalPageName={"Каталог"} additionalHrefText={"/catalog"}/>
-        <ProductImageSwiper image={product?.image}/>
+         <ProductWrapper>
+         <ProductImageSwiper image={product?.image}/>
+         <ProductInfo {...product} />
+         </ProductWrapper>
        </Container>
        <InfoColumns data={infoData}/>
        <InfoColumns data={infoSecondData}/>
