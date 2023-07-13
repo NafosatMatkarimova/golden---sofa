@@ -1,9 +1,17 @@
-import React from "react";
-import * as S from "./style";
+import React, { useContext } from "react";
 import Rate from "components/Rate";
+import * as S from "./style";
 
-const ProductCard = ({ data }) => {
-  const { inCash, image, title, name, price, oldPrice, id, mark } = data;
+import MainContext from "context/CartContext";
+import { Button } from "@mui/material";
+
+
+
+
+
+const ProductCard = ({ props }) => {
+  const { inCash, image, title, name, price, oldPrice, id, mark } = props.data;
+  const {addToCart} = useContext (MainContext);
   return (
     <S.ProductCardWrapper>
       <S.ProductImageLink to={`/product/detail/${id}`}>
@@ -23,6 +31,7 @@ const ProductCard = ({ data }) => {
           <S.Price>{price}</S.Price>
           <S.OldPrice>{oldPrice}</S.OldPrice>
         </S.PriceBoard>
+        <Button oneclik= {() => addToCart (props.data)}>Add to cart</Button>
       </S.ProductCardInfo>
     </S.ProductCardWrapper>
   );

@@ -1,5 +1,5 @@
 import React,{useReducer} from "react";
-import { Reducer } from "../../Reduser";
+import { Reducer } from "../../Reducer";
 
 
 

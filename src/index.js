@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {GlobalStyles} from './utils/globalStyles'
 import App from './App';
-import CartState from 'Reduser/CartState';
+import CartState from 'Reducer/CartState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
