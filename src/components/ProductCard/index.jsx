@@ -9,9 +9,13 @@ import { Button } from "@mui/material";
 
 
 
-const ProductCard = ({ props }) => {
-  const { inCash, image, title, name, price, oldPrice, id, mark } = props.data;
-  const {addToCart} = useContext (MainContext);
+const ProductCard = ({ data, celect}) => {
+  const { inCash, image, title, name, price, oldPrice, id, mark } = data;
+  const cartToggle = () => {
+    return celect ? removeFromCart (id) : addToCart (data)
+  }
+  const {addToCart, removeFromCart} = useContext (MainContext);
+  const {cartItems} = useContext(MainContext)
   return (
     <S.ProductCardWrapper>
       <S.ProductImageLink to={`/product/detail/${id}`}>
@@ -31,7 +35,7 @@ const ProductCard = ({ props }) => {
           <S.Price>{price}</S.Price>
           <S.OldPrice>{oldPrice}</S.OldPrice>
         </S.PriceBoard>
-        <Button oneclik= {() => addToCart (props.data)}>Add to cart</Button>
+        <Button oneclik= {cartToggle}>{celect ? "Remove from cart" : "Add to cart"}</Button>
       </S.ProductCardInfo>
     </S.ProductCardWrapper>
   );
